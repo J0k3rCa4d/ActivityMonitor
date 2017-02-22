@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#"  AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="testui.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head >
+    <title>MasterSite</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <asp:ContentPlaceHolder ID="title"  runat="server"/>
+    <asp:ContentPlaceHolder ID="style" runat="server" />
+</head>
+<body>
+    <div class="container">
+        <asp:ContentPlaceHolder ID="body" runat="server"/>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder   ID="Scripts" runat="server"/>
+</body>
+</html>
